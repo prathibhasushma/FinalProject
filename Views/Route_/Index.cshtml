@@ -1,0 +1,63 @@
+﻿@model IEnumerable<FinalProject1.Models.Route_>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+@*<p>
+    <a asp-action="Create">Create New</a>
+</p>*@
+<p>
+    <center>
+        To Add a Route 
+    <a asp-action="Create">click here</a><br />
+</p>
+<p> To Get the List of Routes
+    <a asp-action="Details">click here</a>
+<br />
+
+
+</p>
+<p>
+    Back to Admin Page
+    <a asp-controller="Home" asp-action="admin">Click Here</a>
+</p>
+</center>
+@*<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Route_id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Vehicle)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.routes)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Route_id)
+                </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Vehicle.Vehicle_Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.routes)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Route_id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Route_id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Route_id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+*@

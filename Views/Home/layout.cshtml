@@ -1,0 +1,90 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] Igloo Travels </title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/FinalProject1.styles.css" asp-append-version="true" />
+    <style>
+        .navbar-expand-sm {
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow mb-3">
+            <div class="container-fluid col-md-4">
+                <img src="~/css/download1.1.png" height="100" width="100" />
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                @* <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                <ul class="navbar-nav flex-grow-1">
+                <li class="nav-item">
+                <a class="nav-link text-dark" asp-area="" asp-controller="vehicle" asp-action="index">vehicle</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link text-dark" asp-area="" asp-controller="employee" asp-action="index">employee</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link text-dark" asp-area="" asp-controller="route_" asp-action="index">route</a>
+                </li>
+
+                </ul>
+
+                </div>*@
+            </div>
+            <div class="col-md-5">
+                <a class="nav-link text-dark" asp-controller="Home" asp-action="Welcome"><h1>IGLOO TRAVELS</h1></a>
+
+            </div>
+
+            @*                <a class="nav-link text-dark" asp-controller="Home" asp-action="Aboutus">About Us</a>
+            *@
+
+
+            @*     </div>
+            *@
+            <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between col-md-3" style="margin-right:20px">
+                <a class="nav-link text-dark" asp-controller="Home" asp-action="Aboutus">About Us</a>
+
+                <ul class="navbar-nav flex-grow-1">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark " style="text-align:right" id="register" asp-area="Identity" asp-page="/Account/Register">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" style="text-align:right" id="login" asp-area="Identity" asp-page="/Account/Login">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2023 - FinalProject1 - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
+

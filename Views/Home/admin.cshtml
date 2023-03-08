@@ -1,0 +1,49 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<style>
+a:hover{
+    background-color:dodgerblue;
+}
+</style>
+<div class="container-fluid col-md-4" style="text-align:center">
+    <h1 style="font-family:'Book Antiqua'"> Welcome Admin</h1>
+</div>
+    <div class="container-fluid col-md-4">
+        <center>
+    <p style="font-family:'Book Antiqua'">
+        <b>Select Your option:</b>
+    </p>
+    </center>
+</div>
+<div class="container-fluid col-md-4">
+    <center>
+    <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+       <div style="text-align:center">
+        <ul class="navbar-nav flex-grow-1">
+         @*   <li class="nav-item">
+                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="index">Home</a>
+            </li>*@
+            <li class="nav-item">
+                <a class="nav-link text-dark" asp-area="" asp-controller="vehicle" asp-action="index" style="font-family:'Book Antiqua'">VEHICLE</a>
+            </li>
+            <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="employee" asp-action="index" style="font-family:'Book Antiqua'">EMPLOYEE</a>
+            </li>
+            <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="route_" asp-action="index" style="font-family:'Book Antiqua'">ROUTE</a>
+            </li>
+             <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="allocate" asp-action="index" style="font-family:'Book Antiqua'">ALLOCATE</a>
+            </li>
+        </ul>
+            </div>
+            </div>
+    </center>
+
+    </div>
+
+    
+</div>
